@@ -1,0 +1,35 @@
+ul{
+  border:1px solid black;
+}
+li {
+  list-style: none;
+  border:1px solid gray;
+  position:fixed;
+  padding:2px;
+  width:70px;
+  cursor:pointer; /*커서 올리면 손가락모양으로 바꿈*/
+  /*transform:rotate(-45deg); 기울기 부여*/
+}
+li{
+  transition: 0.2s ease;
+  left:10px;
+}
+li:hover {
+  transition: 0.2s ease;
+  left:20px;
+  background-color: black;
+  color: white;
+}
+div{
+  position:absolute;
+  cursor:pointer;
+  top:50px;
+  width:10px;
+  height:10px;
+  border:1px;
+  background-color:red;
+  transition: cubic-bezier(0.25,0,0,1) 1s;
+}
+div:hover/*active,target,focus*/{
+  height:100px;
+}
